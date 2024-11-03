@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically centers the container */
+}
+
+.contact-box {
+  width: 850px;
+  height: 78vh; /* Adjust height as needed */
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-bottom: 110px; /* Add some left margin for spacing */
+}
+
+.contact-left {
+  flex: 2; 
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 1px;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #4a7ed7;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #0A2558;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a7ed7;
+}
+
+.contact-right {
+  flex: 2;
+  padding: 40px;
+  background-color: #0A2558;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+.contact-right h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-right table {
+  width: 100%;
+  height: 50%;
+}
+
+.contact-right table td {
+  padding: 10px 0;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.contact-right table td:first-child {
+  width: 30%;
+  font-weight: bold;
+}

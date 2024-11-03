@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Theme Variables */
+.light-theme {
+  --bg-color: #f5f5f5;
+  --card-bg: #ffffff;
+  --text-color: #000000;
+  --label-text-color: #000000;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme {
+  --bg-color: #2c2c2c;
+  --card-bg: #333333;
+  --text-color: #ffffff;
+  --label-text-color: #ffffff;
+  --box-shadow-color: rgba(255, 255, 255, 0.1);
+}
+
+.SettingsInfo {
+  position: relative;
+  background: var(--bg-color);
+  min-height: 100vh;
+  width: 105%;
+  left: 240px;
+  transition: all 0.5s ease;
+  top: 80px;
+  color: var(--text-color);
+  margin-left: -700px;
+}
+
+.sidebar.active ~ .SettingsInfo {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+.settings-form, .current-settings {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--box-shadow-color);
+}
+
+h3 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+/* Label styling to adapt to the theme */
+label {
+  color: var(--label-text-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1240px) {
+  .SettingsInfo {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+}
+
+/* Button styling to adapt to the theme */
+button {
+  background-color: var(--text-color);
+  color: var(--card-bg);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
